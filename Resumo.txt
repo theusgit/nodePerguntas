@@ -1,0 +1,98 @@
+1. Ejs e criação do projeto
+- git init
+-criar arquivo index.js
+-install express e ejs
+
+2. Configurar ejs
+-importar express em const express
+-criar instancia app = express()
+-criar rota com res.send
+-criar listen e a porta, console com mensagem
+-install nodemon
+-chamar view engine(app.set('view engine','ejs');)
+-criar pasta views
+-index.ejs
+-res.render(index)
+
+3.Exibindo var(Não precisa)
+-criar var nome dentro da rota antes de render
+-dentro de render,{nome:nome}
+-em index.ejs <%= nome %>
+(para pegar parametros 
+-na rota "/:nome/:lang"
+var nome = req.params.nome)
+
+4.Arquivos estáticos
+-app.use(express.static('public'));
+-criar pasta public
+-criar pasta css, arquivo style.css
+-link rel stylesheet na index.ejs
+(não precisa colocar public mas precisa da "/css/style.css")
+-criar pasta img dentro de public
+-no index.ejs tag img com caminho da imagem começando com /img/node.png
+
+5.Instalar bootstrap
+-baixar ou encontrar arquivo .zip do bootstrap
+-descompactar dentro da pasta public
+-link rel /css/bootstrap.min.css
+-copiar as duas tags scripts e colar no index.ejs depois do body
+-importar script js /js/bootstrap.min.js"
+
+6.Criando formulário de perguntas
+-criar rota de perguntas com app.get
+-"/perguntar"
+-renderizar arquivo perguntar.ejs que ficará dentro de views
+-copiar tudo de index.ejs para perguntar.ejs
+-criar div container
+-Adicionar:
+h3
+hr
+form
+label titulo
+input com class form-control
+br
+label
+textarea form-control
+br
+button
+
+7.Usar card
+-abrir div card
+-dentro de card, card-header, card-body
+-levar h3 para card-header
+-form para card-body
+
+8.CSS com bootstrap
+-escolher cor no style.css
+-mudar ordem do link rel
+-primeiro boo e depois css
+
+9.Finalizando front com navbar
+-Antes de container
+-nav com class navbar navbar-light bg-primary
+-a com class navbar-brand href"/"
+-img /img...
+-adicionar um id em card para editar com css colocando uma margin de 5vh
+
+
+
+(ctrl+c+k comenta linhas)
+(cls limpa a tela)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

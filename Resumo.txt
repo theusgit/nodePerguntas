@@ -75,6 +75,14 @@ button
 -adicionar um id em card para editar com css colocando uma margin de 5vh
 
 
+10.Partials
+criar uma pasta partials dentro de views
+criar arquivos header, navbar e footer
+header recebe ate /head, navbar recebe nav e footer recebe os scripts ate html
+<%- include('partials/header.ejs' %>)
+navbar
+footer
+
 
 (ctrl+c+k comenta linhas)
 (cls limpa a tela)

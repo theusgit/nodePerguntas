@@ -83,6 +83,35 @@ header recebe ate /head, navbar recebe nav e footer recebe os scripts ate html
 navbar
 footer
 
+11.Enviando formulários com Node
+-form method="GET" não é seguro
+-POST os dados não são passados na url assim é mais seguro
+-Precisa criar rota app.post
+-action="/salvarpergunta" significa para onde o form vai apontar
+-Pegar dados que o form envia titulo e descrição
+
+12.Continuação do envio do form
+-instalar body-parser para pegar os dados
+-importar bodyParser
+-linkar bodyParser, para o body traduzir os dados enviados pelo form para js
+-app.use(bodyParser.ulrencoded({extended: false}));
+app.use(bodyParser.json());
+-ver os nomes dos campos de form
+-Colocar nome no input name=titulo
+-textearea name=descricao
+-utilizar nomes no back end
+-na rota, se quiser pegar o titulo
+-criar variavel var titulo=req.body.titulo fazer o mesmo na descricao
+
+
+
+
+
+
+
+
+
+
 
 (ctrl+c+k comenta linhas)
 (cls limpa a tela)

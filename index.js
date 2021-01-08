@@ -31,9 +31,11 @@ app.get("/perguntar", (req, res) => {
 app.post("/salvarpergunta", (req, res) => {
     var titulo = req.body.titulo;
     var descricao = req.body.descricao;
-    Pergunta.crate({
+    Pergunta.create({
         titulo: titulo,
         descricao: descricao,
+    }).then(()=>{
+        res.redirect("/")
     });
 });
 

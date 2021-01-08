@@ -132,6 +132,41 @@ app.use(bodyParser.json());
 -fazer o mesmo com descricao
 -sincronizar com banco de dados
 Pergunta.sync({ force: false }).then(() => {});
+-exportar module Pergunta
+-importar no index o module Pergunta
+
+16.Salvar perguntas
+-ir na rota salvarpergunta
+-Se quero salvar um dado dentro de uma tabela eu tenho que pegar o model e atraves do model chamar create
+-Pergunta.crate({}) é com o insert
+-dentro de crate crar titulo: titulo
+descricao: descricao
+-.then(()=>{
+	res,redirect("/")
+})
+-se tudo der certo o .then com o res.redirect redireciona o user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

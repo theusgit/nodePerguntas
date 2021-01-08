@@ -122,9 +122,17 @@ app.use(bodyParser.json());
 -.then() se a conexão ocorreu com sucesso
 -se o .then for com sucesso imprimir no console uma frase não esquecer do {} pq é uma função
 -se não for usar o catch com msg de erro imprimindo a mensagem de erro
-
-
 -criar new schema lá no banco
+
+15.Gerando tabela com model
+-criar arquivo Pergunta.js na pasta database
+-instanciar Sequelize e connection que estão na pasta database
+-const Pergunta = connection.define('nome da tabela,json{})
+-dentro do json colocar titulo:{type:Sequelize.STRING, allowNull:false},
+-fazer o mesmo com descricao
+-sincronizar com banco de dados
+Pergunta.sync({ force: false }).then(() => {});
+
 
 
 

@@ -31,8 +31,11 @@ app.get("/perguntar", (req, res) => {
 app.post("/salvarpergunta", (req, res) => {
     var titulo = req.body.titulo;
     var descricao = req.body.descricao;
-    res.send("Formulário recebido titulo " + titulo + " " + "descricao " + descricao);
-})
+    Pergunta.crate({
+        titulo: titulo,
+        descricao: descricao,
+    });
+});
 
 
 

@@ -104,6 +104,27 @@ app.use(bodyParser.json());
 -criar variavel var titulo=req.body.titulo fazer o mesmo na descricao
 
 
+13.Instalar Sequelize
+-Para trabalhar com banco de dados, manipular bancos
+-Manipular com javascript
+-instalar sequelize
+-npm install --save mysql2 para usar sequelize
+
+14.Como conectar sequelize com mysql
+-instanciar Sequelize
+-criar objeto de conexão const connection=new Sequelize(''nome do banco, root e senha abrir json{
+-host que é ''localhost
+-e dialect que ''é mysql
+})
+-exportar connection
+-ir no index.js e instanciar connection pegando ./database/database
+-usar o connection.authenticate()
+-.then() se a conexão ocorreu com sucesso
+-se o .then for com sucesso imprimir no console uma frase não esquecer do {} pq é uma função
+-se não for usar o catch com msg de erro imprimindo a mensagem de erro
+
+
+-criar new schema lá no banco
 
 
 

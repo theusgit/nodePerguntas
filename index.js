@@ -21,7 +21,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get("/", (req, res) => {
-    res.render("index")
+    Pergunta.findAll().then(perguntas=>{
+        console.log(perguntas)
+    });
+    res.render("index");
+
 });
 
 app.get("/perguntar", (req, res) => {
@@ -38,8 +42,6 @@ app.post("/salvarpergunta", (req, res) => {
         res.redirect("/")
     });
 });
-
-
 
 app.listen(4040, () => {
     console.log("app rodando")

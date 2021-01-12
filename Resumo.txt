@@ -146,8 +146,12 @@ descricao: descricao
 })
 -se tudo der certo o .then com o res.redirect redireciona o user
 
+17.Buscando perguntas
+-chmar model pergunta
+-Pergunta.findAll().then(perguntas={
 
-
+    });
+-pergunta.findAll()é o método que chama o model pergunta .then recebe a lista de perguntas
 
 
 

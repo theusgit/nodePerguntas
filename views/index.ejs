@@ -2,15 +2,24 @@
 
     <body>
         <%- include('partials/navbar.ejs') %>
-            
-        <div class="container">
-            <% perguntas.forEach(pergunta => { %>
-                <p><%= pergunta.titulo %> </p>
-                <p><%= pergunta.descricao %> </p>
-                <% }) %>
-            
 
-        </div>
+            <div class="container">
+                <% perguntas.forEach(pergunta=> { %>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <p>
+                                <%= pergunta.titulo %>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success">Perguntar</button>
+                        </div>
+                    </div>
+                    <% }) %>
+
+
+            </div>
 
     </body>
     <%- include('partials/footer.ejs') %>

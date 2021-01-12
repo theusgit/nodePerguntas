@@ -2,7 +2,15 @@
 
     <body>
         <%- include('partials/navbar.ejs') %>
-            <h1>Oi</h1>
+            
+        <div class="container">
+            <% perguntas.forEach(pergunta => { %>
+                <p><%= pergunta.titulo %> </p>
+                <p><%= pergunta.descricao %> </p>
+                <% }) %>
+            
+
+        </div>
 
     </body>
     <%- include('partials/footer.ejs') %>

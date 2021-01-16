@@ -165,6 +165,11 @@ descricao: descricao
 18.listando perguntas no front
 - em index.ejs
 -<div class="container">
+ <hr>
+                <h1>Perguntas</h1>
+                <hr>
+                <a href="/perguntar" class="btn btn-primary">Perguntar</a>
+                <hr>
                 <% perguntas.forEach(pergunta=> { %>
 
                     <div class="card">
@@ -179,6 +184,7 @@ descricao: descricao
                     </div>
                     <% }) %>
 
+19. Ordenação com sequelize
 
 
 

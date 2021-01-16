@@ -153,7 +153,31 @@ descricao: descricao
     });
 -pergunta.findAll()é o método que chama o model pergunta .then recebe a lista de perguntas
 
+-Pergunta.findAll({ raw:true }).then(perguntas=>{
+        res.render("index",{
+            perguntas: perguntas
+        });
+    });
 
+});
+
+
+18.listando perguntas no front
+- em index.ejs
+-<div class="container">
+                <% perguntas.forEach(pergunta=> { %>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <p>
+                                <%= pergunta.titulo %>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success">Perguntar</button>
+                        </div>
+                    </div>
+                    <% }) %>
 
 
 

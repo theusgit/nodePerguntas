@@ -185,9 +185,33 @@ descricao: descricao
                     <% }) %>
 
 19. Ordenação com sequelize
+-dentro de findALL({raw: true, 
+order:[
+        ['id','DESC']
+})
+o order faz a ordenação abrindo um array e dentro desse array abrir outro array que recebe dois parâmetro o id e o DESC
+ 
 
-
-
+20. Busca condicional com Sequelize
+- Criar nova rota do tipo get
+- nome de pergunta
+- recebe o parâmetro /:id
+- pegar id com uma variavel id
+- para pegar o id é req.params.id (requisição, parâmetro e id)
+- fazer busca no bando pelo id
+- para fazer busca temos que pegar a tabela perguntas
+- model pergunta representa a tabela
+- Pergunta.findOne() é um metodo do sequelize que busca um dado com uma condição
+- abrir objeto json dentro de findOne
+- where: {id: id} onde o id da rota será igual ao id do banco (comparar)
+- .then (pergunta=>{}) quando a operação de busca for concluida ele vai chamar o then e passar a pergunta na var
+- tem que verificar se a pergunta é diferente de undefined
+-se for diferente significa que foi encontrada
+- se não conseguir achar a pergunta vai ser nula, não encontrada
+- criar nova view para ser exibida
+- pergunta.ejs
+- res.render("pergunta")
+- se não achar res.redirect("/")
 
 
 

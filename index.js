@@ -28,7 +28,6 @@ app.get("/", (req, res) => {
             perguntas: perguntas
         });
     });
-
 });
 
 app.get("/perguntar", (req, res) => {
@@ -43,6 +42,13 @@ app.post("/salvarpergunta", (req, res) => {
         descricao: descricao,
     }).then(()=>{
         res.redirect("/")
+    });
+});
+
+app.get("/pergunta/:id",(req,res)=>{
+    var id = req.params.id;
+    Pergunta.findOne({
+        where: {id:id}
     });
 });
 

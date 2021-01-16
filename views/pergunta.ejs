@@ -1,1 +1,13 @@
-<h1>Pergunta encontrada</h1>
+<%- include('partials/header.ejs') %>
+
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <div class="container">
+        <hr>
+        <h1><%= pergunta.titulo %></h1>
+        <h1><%= pergunta.descricao %></h1>
+    </div>
+
+</body>
+
+<%- include('partials/footer.ejs') %>

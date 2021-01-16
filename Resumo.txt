@@ -213,6 +213,16 @@ o order faz a ordenação abrindo um array e dentro desse array abrir outro arra
 - res.render("pergunta")
 - se não achar res.redirect("/")
 
+21. front end pg pergunta
+-colocar os includes partials de header navbar e footer
+- colocar container
+- trabalhar variavel na rota para ser exibida no front 
+- usar variavel pergunta dentro da view de pergunta
+- pergunta: pergunta
+- na view de pergunta.ejs
+- h1 com <%= pergunta.titulo %>
+- fazer o mesmo com descricao
+- 
 
 
 

@@ -222,8 +222,17 @@ o order faz a ordenação abrindo um array e dentro desse array abrir outro arra
 - na view de pergunta.ejs
 - h1 com <%= pergunta.titulo %>
 - fazer o mesmo com descricao
-- 
 
+22.Perguntas com links dinâmicos
+- na index.ejs dentro do foreach
+- dentro do button
+- colocar um a href ao redor do button
+- mandar ele ir pra rota de pergunta/<%= pergunta.id %> assim ele encontrará o id da pergunta
+
+23.Model de resposta
+-criar model de Resposta em database
+- copiar e colocar os imports de Pergunta
+- 
 
 
 

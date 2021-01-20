@@ -232,8 +232,15 @@ o order faz a ordenação abrindo um array e dentro desse array abrir outro arra
 23.Model de resposta
 -criar model de Resposta em database
 - copiar e colocar os imports de Pergunta
-- 
+- criar tabela de sequelize
+- constante Resposta recebe a conexão com o banco.define("respostas",{
 
+})
+-corpo:{} tipo do campo que é Sequelize.TEXT e allowNull false 
+-o segundo campo é perguntaId:{}um ralacionamento do tipo inteiro que
+também allowNull: false
+-Resposta.sync({force:false}); método para não criar a tabela caso ela já exista 
+por fim exportar o module Resposta e importar lá em index.js
 
 
 

@@ -242,6 +242,31 @@ também allowNull: false
 -Resposta.sync({force:false}); método para não criar a tabela caso ela já exista 
 por fim exportar o module Resposta e importar lá em index.js
 
+24. Form de resposta
+- ir até pergunta.ejs
+-após a descricao abrir um form com um h3 e um label
+- um textarea com placeholder uma class form=control para o bootstrap organizar com name corpo
+um btn com tipo de submit com class btn btn-success
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

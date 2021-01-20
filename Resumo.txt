@@ -248,6 +248,12 @@ por fim exportar o module Resposta e importar lá em index.js
 - um textarea com placeholder uma class form=control para o bootstrap organizar com name corpo
 um btn com tipo de submit com class btn btn-success
 
+25.criar input
+-após textarea abrir um input esse input recebe o numero do id da rota
+- tipo hidden para não aparecer
+-name pergunta
+-value "<%= pergunta.id%>"
+
 
 
 

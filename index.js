@@ -61,6 +61,8 @@ app.get("/pergunta/:id",(req,res)=>{
     });
 });
 
+app.post()
+
 app.listen(4040, () => {
     console.log("app rodando")
 });

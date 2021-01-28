@@ -254,8 +254,15 @@ um btn com tipo de submit com class btn btn-success
 -name pergunta
 -value "<%= pergunta.id%>"
 
+26.Respondendo perguntas
+nova rota de post com nome de responder
+ir no form e colocar method="POST" action="/responder" action aponta para a rota
+a rota recebe duas var
+var corpo que tem a requisição do corpo ou body do corpo form
+e perguntaId que tem a req.body.pergunta que é o name do input
 
 
+27. Exibir perguntas
 
 
 
